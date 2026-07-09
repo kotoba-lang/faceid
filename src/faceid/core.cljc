@@ -30,6 +30,9 @@
   (attest port request))
 
 (defn attest-and-store! [attestation-store attestation]
+  (when-not (:faceid/ok? attestation)
+    (throw (ex-info "FaceID attestation not successful"
+                    {:faceid/id (:faceid/id attestation)})))
   (when-not (:faceid/device-id attestation)
     (throw (ex-info "FaceID attestation missing device binding"
                     {:faceid/id (:faceid/id attestation)})))
