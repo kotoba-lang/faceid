@@ -8,7 +8,7 @@
   (:require [clojure.edn :as edn]
             [clojure.java.shell :as shell]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is]]
+            [kotoba.test :refer [deftest is]]
             [faceid.datom :as d]
             [faceid.model :as m]))
 
