@@ -1,5 +1,5 @@
 (ns faceid.adapters.edn-local-auth
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             [clojure.java.io :as io]
             [faceid.adapters.local-auth :as local-auth]))
 

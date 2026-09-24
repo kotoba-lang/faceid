@@ -5,7 +5,7 @@
   (--target js-browser) and executed under node; the two outputs are compared
   as Clojure data (the Kotoba :document encoding maps nil->document-null,
   which serializes back to EDN nil, so plain = applies)."
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             [clojure.java.shell :as shell]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is]]
