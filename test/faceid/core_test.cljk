@@ -1,5 +1,5 @@
 (ns faceid.core-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [faceid.core :as c]
             [faceid.datom :as d]
             [faceid.model :as m]

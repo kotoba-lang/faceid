@@ -1,5 +1,5 @@
 (ns faceid.adapters.apple-local-authentication-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [faceid.adapters.apple-local-authentication :as apple]
             [faceid.adapters.local-auth :as local]
             [faceid.core :as c]
